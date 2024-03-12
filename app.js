@@ -8,6 +8,10 @@ const gameSelect = document.querySelector('#game-select');
 let gameTo = 5;
 gameSelect.addEventListener('change', function(){
     gameTo = gameSelect.value;
+    if(p1ScoreValue<gameTo && p2ScoreValue<gameTo){
+            p1Score.style.color = 'black';
+            p2Score.style.color = 'black';
+    }
     
 });
 
